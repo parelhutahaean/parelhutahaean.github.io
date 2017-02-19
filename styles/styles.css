@@ -1,0 +1,127 @@
+body {
+	font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+	/* background: #fff5ec; */
+	background: "../images/background-image.png";
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+  border-color: #ffc89a;
+}
+
+ul,
+ol {
+    list-style-position: inside;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #aaa;
+}
+
+/* Navigation */
+nav {
+	background: #008080;
+	width: 100%;
+	height: 60px;	
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;	
+	list-style-type: none;
+}
+
+nav ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+}
+
+nav li a:hover {
+	background: #109090;
+	color: #fff;	
+}
+
+nav #logo {
+	float: right;
+	width: 70px;
+	padding: 2px 30px;
+}
+
+/* Body Content */
+.container{
+	width: 80%;
+	margin: auto;	
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/* Footer */
+footer {
+	background: #393531;
+	color: #fff;
+	font-size: 13px;
+	padding: 3px;
+	text-align: center;
+}
+
+footer a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+/* Bio Photo */
+#fotoprofil-bio {
+  width: 150px;
+}
+
+/* Section About Me */
+#section-about-me {
+	padding-bottom: 7px;
+}
+
+/* Section Contacts */
+#section-contacts {
+	padding: 5px 0;
+	background: #fffaf6;
+}
+
+/* Input Form */
+input,
+textarea,
+select,
+button {
+	padding: 10px;
+	width: 100%;
+	font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+/* Submit Button*/
+button {
+	width: 55%;
+	background: #3c8d2f;
+	border: none;
+	color: #fff;
+	margin-top: 30px;
+}
+
+button:hover {
+	background: #1e6912;
+}
+
