@@ -1,0 +1,34 @@
+Ini adalah web sederhana yang mensimulasikan challenges pada CoderByte.
+
+Fungsi-fungsi yang ada pada web ini adalah:
+1. Konstruktor Point() yang men-generate objek point yang terdiri dari test case, time period, dan total point
+2. Fungsi calculatePoint() yang menghasilkan test case point atau time period point dari bilangan random.
+   Fungsi ini memperlakukan secara khusus test case point karena user CoderByte biasanya concern sama solusi
+   fungsi sementara waktu tidak begitu diperhatikan sehingga test case point cenderung lebih tinggi nilainya.
+3. Fungsi submit() disesuaikan dengan tombol Submit yang ada pada CoderByte yang akan mengembalikan feedback
+   yang meyakinkan user apakah yakin mengirimkan jawaban dari challenge yang telah dikerjakan.
+4. Fungsi yes() yang akan menghitung point pada challenge tersebut yang menampilkan hasilnya berupa daftar nilai.
+5. Fungsi no() yang akan membatalkan submit jawaban dari challenge.
+
+Pseudocode calculatePoint() :
+1. Baca dan simpan nilai input apakah true atau false
+2. Hitung point dengan mengalikan random number [0 s.d. 1] dengan 5 dan membulatkannya dengan bilangan bualat terdekat
+3. Jika nilai input true maka lakukan langkah berikut :
+   3.1. Jika point bernilai 0 atau 5 maka kembalikan nilai point
+   3.2. Jika point bernilai selain 0 dan 5 maka kembalikan nilai point ditambah 1
+4. Jika nilai input false maka lakukan langkah berikut dengan mengembalikan nilai point
+
+Pseudocode submit() :
+1. Tampilkan teks "Are you sure" disertai tombol "Yes" dan "No"
+
+Pseudocode yes() :
+1. Tampung nilai test case point, time period point, dan total point ke dalam objek Point
+2. Simpan objek Point ke dalam array of Point (berisi daftar challenge yang telah dikerjakan)
+3. Ulangi langkah berikut sebanyak challenge dari array of Point
+   3.1. Tambahkan nilai total all point dengan nilai total point pada challenge ini
+   3.2. Tampilkan message yang memberitahu point yang diperoleh pada challenge ini
+4. Tampilkan message yang memberitahu jumlah challenge yang telah dikerjakan dan total nilai keseluruhan
+5. Beralih ke halaman tantangan selanjutnya dan menampilkan tombol submit
+
+Pseudocode no() :
+1. Kembali pada halaman tantangan sebelumnya dengan menampilkan tombol submit
